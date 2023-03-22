@@ -1,63 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dog_owners>
-    <dog_owner id="1">
-        <initial>A</initial>
-        <surname>Pazos</surname>
-        <address>Horreo, 4</address>
-        <postcode>15706</postcode>
-        <dog id="1">
-            <dog_name>Lor</dog_name>
-            <gender>M</gender>
-            <date_of_birth>21/08/22</date_of_birth>
-            <breed>Alsatian</breed>
-        </dog>
-    </dog_owner>
-    <dog_owner id="1">
-        <initial>A</initial>
-        <surname>Pazos</surname>
-        <address>Horreo, 4</address>
-        <postcode>15706</postcode>
-        <dog id="2">
-            <dog_name>Nei</dog_name>
-            <gender>M</gender>
-            <date_of_birth>21/08/22</date_of_birth>
-            <breed>Alsatian</breed>
-        </dog>
-    </dog_owner>
-    <dog_owner id="1">
-        <initial>A</initial>
-        <surname>Pazos</surname>
-        <address>Horreo, 4</address>
-        <postcode>15706</postcode>
-        <dog id="3">
-            <dog_name>Bimba</dog_name>
-            <gender>F</gender>
-            <date_of_birth>08/08/21</date_of_birth>
-            <breed>Terrier</breed>
-        </dog> 
-    </dog_owner>
-    <dog_owner id="1">
-        <initial>A</initial>
-        <surname>Pazos</surname>
-        <address>Horreo, 4</address>
-        <postcode>15706</postcode>
-        <dog id="4">
-            <dog_name>Sol</dog_name>
-            <gender>M</gender>
-            <date_of_birth>30/12/22</date_of_birth>
-            <breed>Poodle</breed>
-        </dog>
-    </dog_owner>
-    <dog_owner id="2">
-        <initial>C</initial>
-        <surname>Casal</surname>
-        <address>Feáns, 15</address>
-        <postcode>15701</postcode>
-        <dog id="5">
-            <dog_name>Tor</dog_name>
-            <gender>M</gender>
-            <date_of_birth></date_of_birth>
-            <breed>Chihuahua</breed>
-        </dog> 
-    </dog_owner>
-</dog_owners>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<petShop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="petshop.xsd" name="Animals Care, S.A.">
+	<reptiles>
+ 		<reptile>Boa constrictor
+			<weight measurementUnit="Kg">65</weight>
+			<length measurementUnit="cm">230</length>
+			<age measurementUnit="months">14</age>
+		</reptile>
+		<reptile>Iguana
+			<weight measurementUnit="Kg">2</weight>
+			<length measurementUnit="mm">500</length>
+		</reptile>
+	</reptiles>
+	<mammals>
+ 		<mammal code="ABC-(12345)">
+			<name value="Toby"/>
+			<specie>
+				<dog/>
+			</specie>
+			<description>A beautiful dog</description>
+		</mammal>
+		<mammal code="ZYX-(98765)">
+			<name value="Willy"/>
+			<specie>
+				<whale/>
+			</specie>
+			<description>It's funny</description>
+		</mammal>
+		<mammal code="GHI-(55567)">
+			<name value="Flipper"/>
+			<specie>
+				<dolphin/>
+			</specie>
+			<description>A cute animal</description>
+		</mammal>
+	</mammals>
+	<measurementUnits>mm cm dm m kg days weeks months</measurementUnits>
+	<contactInfo>
+		<postalAddress>Rúa da Angustia, 12</postalAddress>
+		<telephone>637123985</telephone>
+	</contactInfo>
+	<clients>  
+		<client name="Tamara Xordo Roi">
+			<postalAddress>Rúa da Paz, 33, 3º-D - 15702 - Compostela</postalAddress>
+			<telephone>621465767</telephone>
+			<email>tamaraxr@gmail.com</email>
+		</client> 
+	</clients>
+</petShop>

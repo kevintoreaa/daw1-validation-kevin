@@ -1,13 +1,14 @@
 <!ELEMENT dog_owners (dog_owner+)>
 <!ELEMENT dog_owner (initial,surname,address,postcode,dog)>
-<!ATTLIST dog_owner id NMTOKEN #REQUIRED>
+<!ATTLIST dog_owner id IDREF REQUIRED>
 <!ELEMENT initial (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
 <!ELEMENT address (#PCDATA)>
 <!ELEMENT postcode (#PCDATA)>
-<!ELEMENT dog (dog_name,gender,date_of_birth,breed)>
-<!ATTLIST dog id NMTOKEN #REQUIRED>
+<!ELEMENT dog (dog_name,gender,date_of_birth?,breed,dangerous?)>
+<!ATTLIST dog id IDREF #REQUIRED>
 <!ELEMENT dog_name (#PCDATA)>
-<!ELEMENT gender (#PCDATA)>
+<!ELEMENT gender CDATA default_value="M">
 <!ELEMENT date_of_birth (#PCDATA)>
 <!ELEMENT breed (#PCDATA)>
+<!ELEMENT dangerous (#PCDATA)>

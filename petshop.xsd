@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="petShop">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="reptiles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="reptile" maxOccurs="unbounded">
+								<xs:complexType mixed="true">
+									<xs:sequence>
+										<xs:group ref="Measurement Group">
+											<xs:element name="weight">
+												<xs:complexType>
+													<xs:simpleContent>
+														<xs:extension base="xs:string">
+															<xs:attribute name="measurementUnit"
+																use="required" />
+														</xs:extension>
+													</xs:simpleContent>
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="length">
+												<xs:complexType>
+													<xs:simpleContent>
+														<xs:extension base="xs:string">
+															<xs:attribute name="measurementUnit"
+																use="required" />
+														</xs:extension>
+													</xs:simpleContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:group>
+										<xs:element name="weight">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="measurementUnit"
+															use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="length">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="measurementUnit"
+															use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+
+										<xs:element name="age" minOccurs="0">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="measurementUnit"
+															use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="mammals">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mammal" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name">
+											<xs:complexType>
+												<xs:attribute name="value" use="required" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="specie">
+											<xs:complexType>
+												<xs:sequence minOccurs="0">
+													<xs:element name="dog" minOccurs="0" />
+													<xs:element name="whale" minOccurs="0" />
+													<xs:element name="dolphin" minOccurs="0" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="description" type="xs:string" />
+									</xs:sequence>
+									<xs:attribute name="code" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="measurementUnits" type="xs:string" />
+				<xs:element name="contactInfo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:group ref="contactGroup">
+								<xs:element name="postalAddress" type="xs:string" />
+								<xs:element name="telephone" type="xs:string" />
+							</xs:group>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="clients">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="client">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:group ref="contactGroup">
+											<xs:element name="postalAddress" type="xs:string" />
+											<xs:element name="telephone" type="xs:string" />
+										</xs:group>
+										<xs:element name="email" type="xs:string" />
+									</xs:sequence>
+									<xs:attribute name="name" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="name" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
