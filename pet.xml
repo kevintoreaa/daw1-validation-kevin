@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <dog_owners>
+        <dog_owner id="1">
+            <initial>A</initial>
+            <surname>Pazos</surname>
+            <address>Horreo, 4</address>
+            <postcode>15706</postcode>
+            <dog_name>Lor</dog_name>
+            <gender>M</gender>
+            <date_of_birth>21/08/22</date_of_birth>
+            <breed>Alsatian</breed>
+        </dog_owner>
+        <dog_owner id="1">
+            <initial>A</initial>
+            <surname>Pazos</surname>
+            <address>Horreo, 4</address>
+            <postcode>15706</postcode>
+            <dog_name>Nei</dog_name>
+            <gender>M</gender>
+            <date_of_birth>21/08/22</date_of_birth>
+            <breed>Alsatian</breed>
+        </dog_owner>
+        <dog_owner id="1">
+            <initial>A</initial>
+            <surname>Pazos</surname>
+            <address>Horreo, 4</address>
+            <postcode>15706</postcode>
+            <dog_name>Bimba</dog_name>
+            <gender>F</gender>
+            <date_of_birth>08/08/21</date_of_birth>
+            <breed>Terrier</breed>
+        </dog_owner>
+        <dog_owner id="1">
+            <initial>A</initial>
+            <surname>Pazos</surname>
+            <address>Horreo, 4</address>
+            <postcode>15706</postcode>
+            <dog_name>Sol</dog_name>
+            <gender>M</gender>
+            <date_of_birth>30/12/22</date_of_birth>
+            <breed>Poodle</breed>
+        </dog_owner>
+        <dog_owner id="2">
+            <initial>C</initial>
+            <surname>Casal</surname>
+            <address>Feáns, 15</address>
+            <postcode>15701</postcode>
+            <dog_name>Tor</dog_name>
+            <gender>M</gender>
+            <date_of_birth></date_of_birth>
+            <breed>Chihuahua</breed>
+        </dog_owner>
+
+    </dog_owners>
